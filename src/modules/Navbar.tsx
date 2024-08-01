@@ -8,13 +8,13 @@ const Navbar = () => {
           <p className="text-xl font-bold">Mififur</p>
           <ul className="flex gap-6">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/shop">Tienda</Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link href="/about">Acerca de </Link>
             </li>
           </ul>
           <ul className="flex gap-6">
