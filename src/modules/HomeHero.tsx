@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
+import Paw from "../../public/paw.svg";
 
 const bebasNeue = Bebas_Neue({
   preload: false,
@@ -8,20 +9,26 @@ const bebasNeue = Bebas_Neue({
 
 const HomeHero = () => {
   return (
-    <div className="bg-amber-400 relative rounded-3xl h-[calc(100vh-150px)] flex flex-col justify-center mb-[50px]">
+    <div
+      style={{
+        background:
+          "linear-gradient(90deg, rgb(223, 163, 21) 0%, #fbbf24 100%)",
+      }}
+      className="bg-amber-400 relative rounded-3xl h-[calc(100vh-150px)] flex flex-col justify-center mb-[50px]"
+    >
       <div className="flex flex-col gap-4 text-lg text-center items-center max-w-2xl mx-auto">
-        <p className="text-neutral-900 uppercase tracking-wider">
-          Live your fashion
-        </p>
+        {/* <p className="text-neutral-900 uppercase tracking-wider">
+          Haz la Diferencia
+        </p> */}
+        <Image src={Paw} alt="Paw" width={50} height={50} />
         <h1 className="text-3xl sm:text-6xl font-bold text-neutral-950">
-          Viste con Inspiración
+          Viste con Corazón: <br /> Moda que Cambia Vidas
         </h1>
         <p className="text-neutral-950">
-          Explora nuestra colección exclusiva de camisetas, hoodies y gorras con
-          mensajes poderosos que reflejan tu fuerza interior. En Mikifur, cada
-          prenda está diseñada para motivar y marcar la diferencia, con un
-          porcentaje de cada venta destinado a mejorar la vida de nuestros
-          amigos peludos.
+          Descubre nuestra colección única de camisetas, hoodies y gorras que
+          reflejan tu fuerza y amor. En Mikifur, cada compra no solo te viste
+          bien, sino que también ayuda a mejorar la vida de nuestros amigos
+          peludos.
         </p>
         <button
           className={`bg-black text-white px-10 pt-3 pb-2 mt-2 
