@@ -1,6 +1,10 @@
 import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
-import { bebasNeue } from "../layout";
+
+const bebasNeue = Bebas_Neue({
+  preload: false,
+  weight: "400",
+});
 
 interface ProductCardProps {
   id: number;
