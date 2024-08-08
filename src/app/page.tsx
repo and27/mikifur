@@ -1,15 +1,15 @@
-import HomeHero from "./modules/HomeHero";
-import HomeProducts from "./modules/HomeProducts";
-import HomeBenefits from "./modules/HomeBenefits";
-import Navbar from "./modules/Navbar";
+import HomeHero from "../modules/HomeHero";
+import HomeProducts from "../modules/HomeProducts";
+import HomeBenefits from "../modules/HomeBenefits";
+import HomeContact from "@/modules/HomeContact";
 
 export default function Home() {
   return (
-    <main className="max-w-[1280px] mx-5 sm:mx-auto ">
-      <Navbar />
+    <main>
       <HomeHero />
       <HomeProducts />
       <HomeBenefits />
+      <HomeContact />
     </main>
   );
 }
